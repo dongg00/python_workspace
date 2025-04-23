@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Country_ratio <= 0.309\ngini = 0.402\nsamples = 19798\nvalue = [14289, 5509]\nclass = cancel_no", fillcolor="#efb285"] ;
+1 [label="Agent <= 240.5\ngini = 0.275\nsamples = 10997\nvalue = [9189.0, 1808.0]\nclass = cancel_no", fillcolor="#ea9a60"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Agent <= 231.5\ngini = 0.367\nsamples = 6639\nvalue = [5030, 1609]\nclass = cancel_no", fillcolor="#eda978"] ;
+1 -> 2 ;
+3 [label="gini = 0.068\nsamples = 2243\nvalue = [2164, 79]\nclass = cancel_no", fillcolor="#e68640"] ;
+2 -> 3 ;
+4 [label="gini = 0.454\nsamples = 4396\nvalue = [2866, 1530]\nclass = cancel_no", fillcolor="#f3c4a3"] ;
+2 -> 4 ;
+5 [label="PreviousCancellations <= 0.5\ngini = 0.087\nsamples = 4358\nvalue = [4159, 199]\nclass = cancel_no", fillcolor="#e68742"] ;
+1 -> 5 ;
+6 [label="gini = 0.063\nsamples = 4298\nvalue = [4159, 139]\nclass = cancel_no", fillcolor="#e68540"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 60\nvalue = [0, 60]\nclass = cancel_yes", fillcolor="#399de5"] ;
+5 -> 7 ;
+8 [label="LeadTtime <= 21.5\ngini = 0.487\nsamples = 8801\nvalue = [5100, 3701]\nclass = cancel_no", fillcolor="#f8dcc9"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="LeadTtime <= 7.5\ngini = 0.237\nsamples = 3672\nvalue = [3168.0, 504.0]\nclass = cancel_no", fillcolor="#e99558"] ;
+8 -> 9 ;
+10 [label="gini = 0.156\nsamples = 2714\nvalue = [2482, 232]\nclass = cancel_no", fillcolor="#e78d4c"] ;
+9 -> 10 ;
+11 [label="gini = 0.407\nsamples = 958\nvalue = [686, 272]\nclass = cancel_no", fillcolor="#efb388"] ;
+9 -> 11 ;
+12 [label="car_yes <= 0.5\ngini = 0.47\nsamples = 5129\nvalue = [1932.0, 3197.0]\nclass = cancel_yes", fillcolor="#b1d8f5"] ;
+8 -> 12 ;
+13 [label="gini = 0.429\nsamples = 4641\nvalue = [1444, 3197]\nclass = cancel_yes", fillcolor="#92c9f1"] ;
+12 -> 13 ;
+14 [label="gini = 0.0\nsamples = 488\nvalue = [488, 0]\nclass = cancel_no", fillcolor="#e58139"] ;
+12 -> 14 ;
+}
